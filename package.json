@@ -1,0 +1,18 @@
+{
+  "name": "realstatetw",
+  "version": "1.0.0",
+  "description": "web con tailwindcss",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss css/tailwind.css -o public/build/tailwind.css",
+    "watch": "postcss css/tailwind.css -o public/build/tailwind.css --watch"
+  },
+  "author": "Josedlca",
+  "license": "MIT",
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^1.3.0",
+    "autoprefixer": "^9.7.0",
+    "postcss-cli": "^6.1.3",
+    "tailwindcss": "^1.1.3"
+  }
+}

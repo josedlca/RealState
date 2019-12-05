@@ -1,0 +1,62 @@
+@tailwind base;
+
+@tailwind components;
+
+.big-tittle{
+	@apply text-center mb-3 font-medium text-deep-space-sparkle text-2xl;
+} 
+
+.light-subtittle{
+	@apply text-center text-sm font-light text-deep-space-sparkle;
+}
+
+@screen sm{
+	.big-tittle{
+		@apply text-center mb-6 font-medium text-deep-space-sparkle text-4-1/2xl;
+	} 
+	.light-subtittle{
+		@apply text-center text-xl font-light text-deep-space-sparkle;
+	}
+}
+
+@tailwind utilities;
+
+.poligon-left{
+	clip-path: polygon(0% 100%, 100% -300%, 100% 100%, 0% 100%);
+}
+
+.poligon-top{
+	clip-path: polygon(0% 60px, 100% 0%, 100% 100%, 0% 100%);
+}
+.poligon-bot{
+	clip-path: polygon(0% 0%, 100% 0%, 100% 82%, 0% 100%);
+}
+
+
+.poligon-top-smooth{
+	clip-path: polygon(0% 32px, 100% 0%, 100% 100%, 0% 100%);
+}
+.poligon-bot-smooth{
+	clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+
+.translate-X-center{
+	transform: translateX(-50%);
+}
+
+.lines-be-af::before,
+.lines-be-af::after{
+	content: "";
+    width: 45%;
+    background: #1985A1;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+}
+
+.lines-be-af::before{
+	left: 0;
+}
+.lines-be-af::after{
+	right: 0;
+}

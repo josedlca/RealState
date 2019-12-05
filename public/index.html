@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="Description" content="Real estate page maked with tailwind">
+	<link rel="preload" href="./build/tailwind.css" as="style" onload="this.rel='stylesheet'">
+	<title>Real State</title>
+</head>
+<body>
+	<header id="header">
+		<div class=" bg-deep-space-sparkle py-2 items-center flex flex-row justify-between w-full px-5 lg:px-13">
+			<!-- burguer icon mobile -->
+			<div class="w-3/12 sm:hidden">
+				<svg class="w-8 fill-current text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+					<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
+				</svg>
+			</div>
+			<!-- burguer icon mobile end-->
+			<!-- logo -->
+			<div class="w-5/12 sm:w-3/12 lg:w-2/12 pb-8per sm:pb-3per relative">
+				<img class="w-full h-full absolute" src="../assets/img/Logo.png" alt="Logo">
+			</div>
+			<!-- logo end-->
+
+			<!-- nav options -->
+			<div class=" hidden sm:flex flex-col">
+				<!-- parte superior -->
+				<ul class="flex flex-row justify-end">
+					<li class="ml-3 lg:ml-8"><a class=" text-sm text-lavender-gray uppercase" href="#header">Login</a></li>
+					<li class="ml-3 lg:ml-8"><a class=" text-sm text-lavender-gray uppercase" href="#header">Sign up</a></li>
+					<li class="ml-3 lg:ml-8"><a class=" text-sm text-lavender-gray uppercase" href="#header">Submit Porperty</a></li>
+				</ul>
+				<!-- parte superior end-->
+
+				<!-- parte inferior -->
+				<ul class="flex flex-row">
+					<li class="ml-3 lg:ml-8"><a class=" text-sm text-lavender-gray uppercase" href="#header">Home</a></li>
+					<li class="ml-3 lg:ml-8"><a class=" text-sm text-lavender-gray uppercase" href="#header">About</a></li>
+					<li class="ml-3 lg:ml-8"><a class=" text-sm text-lavender-gray uppercase" href="#header">Agents</a></li>
+					<li class="ml-3 lg:ml-8"><a class=" text-sm text-lavender-gray uppercase" href="#header">Properties</a></li>
+					<li class="ml-3 lg:ml-8"><a class=" text-sm text-lavender-gray uppercase" href="#header">Team</a></li>
+					<li class="ml-3 lg:ml-8"><a class=" text-sm text-lavender-gray uppercase" href="#header">News</a></li>
+					<li class="ml-3 lg:ml-8"><a class=" text-sm text-lavender-gray uppercase" href="#header">Contact</a></li>					
+				</ul>
+				<!-- parte inferior -->
+			</div>
+			<!-- nav options end-->
+		</div>
+	</header>
+	<main class=" w-full">
+		<!-- banner section -->
+		<section class=" w-full bg-deep-space-sparkle pb-63per sm:pb-42per relative">
+			<img class="w-full h-full absolute top-0 left-0 object-cover" src="../assets/img/joshua-earle-Hn8N4I4eHA0-unsplash.jpg" alt="picture by joshua-earle-Hn8N4I4eHA0-unsplash from unsplash">
+			<div class=" container flex flex-col justify-center h-full w-full absolute left-1/2 top-0 translate-X-center">
+				<div class="mb-2 sm:mb-8">
+					<h1 class="text-center text-1xl sm:text-5xl lg:text-5-3/4xl font-bold text-white leading-none">Welcome to Staker Real Estate</h1>
+				</div>
+				<div class="mb-2 sm:mb-8">
+					<p class=" text-center text-lg sm:text-xl font-normal text-white">Enjoy Your Stay o The FullestExtent</p>
+				</div>
+				
+				<div class=" text-center">
+					<a class="group pl-6 sm:pl-8 pr-10 sm:pr-12 py-2 bg-white hover:bg-cg-blue inline-block relative" href="#header">
+						<p class="group-hover:text-white  text-sm sm:text-1xl font-normal text-deep-space-sparkle uppercase">Contact Us</p>
+						<!-- arrow icon -->
+						<div class=" absolute h-full w-12 top-0 right-0 flex justify-center items-center poligon-left">
+							<svg class="w-4 sm:w-5 group-hover:text-white fill-current text-deep-space-sparkle" xmlns="http://www.w3.org/2000/svg"viewBox="0 0 20.94 12.844">
+								<path class="cls-1" d="M1047,549.5a0.726,0.726,0,0,0,.74.714h17.7l-4.64,4.5a0.707,0.707,0,0,0,0,1.006,0.753,0.753,0,0,0,1.04,0l5.89-5.719a0.731,0.731,0,0,0,0-1.01l-5.89-5.715a0.755,0.755,0,0,0-1.04,0,0.7,0.7,0,0,0,0,1.01l4.63,4.5h-17.7A0.712,0.712,0,0,0,1047,549.5Z" transform="translate(-1047 -543.094)"/>
+							</svg>
+						</div>
+						<!-- arrow icon end-->
+					</a>
+				</div>
+			</div>
+		</section>
+		<!-- banner section -->
+
+		<!-- cards section -->
+		<section class="w-full flex flex-col bg-gray-superlight py-16">
+			<!-- titlw of card section -->
+			<div class="container mx-auto flex flex-col items-center mb-10">
+				<h3 class="big-tittle">Recentry Added property</h3>
+				<div class="w-8/12 sm:w-4/12 lg:w-3/12 xl:w-2/12">
+					<p class="light-subtittle mb-2">We provide good quality</p>
+					<div class="hidden sm:block lines-be-af relative w-full text-center text-cg-blue">
+						<svg class="mx-auto" xmlns="http://www.w3.org/2000/svg" width="14.688" height="14.68">
+							<path class="fill-current text-cg-blue" d="M13.99-.01l.708.7-14 14-.707-.7 14-14" fill="#cdcdcd" fill-rule="evenodd"/>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<!-- titlw of card section -->
+
+			<!-- cards -->
+			<div class=" w-full flex flex-row flex-wrap">
+				<div class=" group w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 px-2 pb-4">
+					<div class=" w-full flex flex-col bg-white">
+						<div class="relative pb-76per poligon-bot">
+							<img class="absolute w-full h-full" src="../assets/img/card-picture-one.jpg" alt="picture by michael from unsplash">
+						</div>
+						<div class="w-full px-5 pb-5 bg-white">
+							<div class=" group-hover:bg-cg-blue w-full flex flex-col bg-gray-light -mt-28 relative pt-20 pb-13 px-10 poligon-top">
+								<p class=" group-hover:text-white font-medium text-2xl text-outer-space">Gorgeus Apartment</p>
+								<p class=" group-hover:text-white font-normal text-sm text-outer-space">Water St. New York, NY, USA</p>
+								<div class="w-2/12 bg-cg-blue h-0.1"></div>
+								<div class="w-full flex flex-row">
+									<p class=" group-hover:text-white font-normal text-sm text-outer-space">4 Bedrooms</p>
+									<p class=" group-hover:text-white font-normal text-sm text-outer-space">3 Bathrooms</p>
+									<p class=" group-hover:text-white font-normal text-sm text-outer-space">1200 Sqft</p>
+								</div>
+								<div class="w-full flex flex-row justify-between">
+									<p class=" group-hover:text-white font-bold text-xl text-outer-space">$259,900</p>
+									<div class="flex flex-row">
+										<svg class=" w-4 fill-current text-lavender-gray"viewBox="0 0 51.997 51.997">
+											<path d="M51.911 16.242c-.759-8.354-6.672-14.415-14.072-14.415-4.93 0-9.444 2.653-11.984 6.905-2.517-4.307-6.846-6.906-11.697-6.906C6.759 1.826.845 7.887.087 16.241c-.06.369-.306 2.311.442 5.478 1.078 4.568 3.568 8.723 7.199 12.013l18.115 16.439 18.426-16.438c3.631-3.291 6.121-7.445 7.199-12.014.748-3.166.502-5.108.443-5.477zm-2.39 5.019c-.984 4.172-3.265 7.973-6.59 10.985L25.855 47.481 9.072 32.25c-3.331-3.018-5.611-6.818-6.596-10.99-.708-2.997-.417-4.69-.416-4.701l.015-.101c.65-7.319 5.731-12.632 12.083-12.632 4.687 0 8.813 2.88 10.771 7.515l.921 2.183.921-2.183c1.927-4.564 6.271-7.514 11.069-7.514 6.351 0 11.433 5.313 12.096 12.727.002.016.293 1.71-.415 4.707z"/>
+										</svg>
+										<svg class="w-4 fill-current text-lavender-gray" viewBox="0 0 473.932 473.932">
+											<path d="M385.513 301.214c-27.438 0-51.64 13.072-67.452 33.09l-146.66-75.002c1.92-7.161 3.3-14.56 3.3-22.347 0-8.477-1.639-16.458-3.926-24.224l146.013-74.656c15.725 20.924 40.553 34.6 68.746 34.6 47.758 0 86.391-38.633 86.391-86.348C471.926 38.655 433.292 0 385.535 0c-47.65 0-86.326 38.655-86.326 86.326 0 7.809 1.381 15.229 3.322 22.412L155.892 183.74c-15.833-20.039-40.079-33.154-67.56-33.154-47.715 0-86.326 38.676-86.326 86.369s38.612 86.348 86.326 86.348c28.236 0 53.043-13.719 68.832-34.664l145.948 74.656c-2.287 7.744-3.947 15.79-3.947 24.289 0 47.693 38.676 86.348 86.326 86.348 47.758 0 86.391-38.655 86.391-86.348.022-47.736-38.611-86.37-86.369-86.37z"/>
+										</svg>
+									</div>
+								</div>
+								<a class="flex flex-row" href="#header">
+									<p class=" group-hover:text-white font-normal text-sm uppercase text-deep-space-sparkle">Get details</p>
+									<svg class="w-3 fill-current text-deep-space-sparkle" viewBox="0 0 20.94 12.844">
+										<path class="cls-1" d="M1047,549.5a0.726,0.726,0,0,0,.74.714h17.7l-4.64,4.5a0.707,0.707,0,0,0,0,1.006,0.753,0.753,0,0,0,1.04,0l5.89-5.719a0.731,0.731,0,0,0,0-1.01l-5.89-5.715a0.755,0.755,0,0,0-1.04,0,0.7,0.7,0,0,0,0,1.01l4.63,4.5h-17.7A0.712,0.712,0,0,0,1047,549.5Z" transform="translate(-1047 -543.094)"/>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class=" group w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 px-2 pb-4">
+					<div class=" w-full flex flex-col bg-white">
+						<div class="relative pb-76per poligon-bot">
+							<img class="absolute w-full h-full" src="../assets/img/card-picture-two.jpg" alt="picture by michael from unsplash">
+						</div>
+						<div class="w-full px-5 pb-5 bg-white">
+							<div class=" group-hover:bg-cg-blue w-full flex flex-col bg-gray-light -mt-28 relative pt-20 pb-13 px-10 poligon-top">
+								<p class=" group-hover:text-white font-medium text-2xl text-outer-space">Gorgeus Apartment</p>
+								<p class=" group-hover:text-white font-normal text-sm text-outer-space">Water St. New York, NY, USA</p>
+								<div class="w-2/12 bg-cg-blue h-0.1"></div>
+								<div class="w-full flex flex-row">
+									<p class=" group-hover:text-white font-normal text-sm text-outer-space">4 Bedrooms</p>
+									<p class=" group-hover:text-white font-normal text-sm text-outer-space">3 Bathrooms</p>
+									<p class=" group-hover:text-white font-normal text-sm text-outer-space">1200 Sqft</p>
+								</div>
+								<div class="w-full flex flex-row justify-between">
+									<p class=" group-hover:text-white font-bold text-xl text-outer-space">$259,900</p>
+									<div class="flex flex-row">
+										<svg class=" w-4 fill-current text-lavender-gray"viewBox="0 0 51.997 51.997">
+											<path d="M51.911 16.242c-.759-8.354-6.672-14.415-14.072-14.415-4.93 0-9.444 2.653-11.984 6.905-2.517-4.307-6.846-6.906-11.697-6.906C6.759 1.826.845 7.887.087 16.241c-.06.369-.306 2.311.442 5.478 1.078 4.568 3.568 8.723 7.199 12.013l18.115 16.439 18.426-16.438c3.631-3.291 6.121-7.445 7.199-12.014.748-3.166.502-5.108.443-5.477zm-2.39 5.019c-.984 4.172-3.265 7.973-6.59 10.985L25.855 47.481 9.072 32.25c-3.331-3.018-5.611-6.818-6.596-10.99-.708-2.997-.417-4.69-.416-4.701l.015-.101c.65-7.319 5.731-12.632 12.083-12.632 4.687 0 8.813 2.88 10.771 7.515l.921 2.183.921-2.183c1.927-4.564 6.271-7.514 11.069-7.514 6.351 0 11.433 5.313 12.096 12.727.002.016.293 1.71-.415 4.707z"/>
+										</svg>
+										<svg class="w-4 fill-current text-lavender-gray" viewBox="0 0 473.932 473.932">
+											<path d="M385.513 301.214c-27.438 0-51.64 13.072-67.452 33.09l-146.66-75.002c1.92-7.161 3.3-14.56 3.3-22.347 0-8.477-1.639-16.458-3.926-24.224l146.013-74.656c15.725 20.924 40.553 34.6 68.746 34.6 47.758 0 86.391-38.633 86.391-86.348C471.926 38.655 433.292 0 385.535 0c-47.65 0-86.326 38.655-86.326 86.326 0 7.809 1.381 15.229 3.322 22.412L155.892 183.74c-15.833-20.039-40.079-33.154-67.56-33.154-47.715 0-86.326 38.676-86.326 86.369s38.612 86.348 86.326 86.348c28.236 0 53.043-13.719 68.832-34.664l145.948 74.656c-2.287 7.744-3.947 15.79-3.947 24.289 0 47.693 38.676 86.348 86.326 86.348 47.758 0 86.391-38.655 86.391-86.348.022-47.736-38.611-86.37-86.369-86.37z"/>
+										</svg>
+									</div>
+								</div>
+								<a class="flex flex-row" href="#header">
+									<p class=" group-hover:text-white font-normal text-sm uppercase text-deep-space-sparkle">Get details</p>
+									<svg class="w-3 fill-current text-deep-space-sparkle" viewBox="0 0 20.94 12.844">
+										<path class="cls-1" d="M1047,549.5a0.726,0.726,0,0,0,.74.714h17.7l-4.64,4.5a0.707,0.707,0,0,0,0,1.006,0.753,0.753,0,0,0,1.04,0l5.89-5.719a0.731,0.731,0,0,0,0-1.01l-5.89-5.715a0.755,0.755,0,0,0-1.04,0,0.7,0.7,0,0,0,0,1.01l4.63,4.5h-17.7A0.712,0.712,0,0,0,1047,549.5Z" transform="translate(-1047 -543.094)"/>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class=" group w-1/4 hidden lg:w-1/3 xl:w-1/4 lg:block px-2  pb-4">
+					<div class=" w-full flex flex-col bg-white">
+						<div class="relative pb-76per poligon-bot">
+							<img class="absolute w-full h-full" src="../assets/img/card-picture-three.jpg" alt="picture by michael from unsplash">
+						</div>
+						<div class="w-full px-5 pb-5 bg-white">
+							<div class=" group-hover:bg-cg-blue w-full flex flex-col bg-gray-light -mt-28 relative pt-20 pb-13 px-10 poligon-top">
+								<p class=" group-hover:text-white font-medium text-2xl text-outer-space">Gorgeus Apartment</p>
+								<p class=" group-hover:text-white font-normal text-sm text-outer-space">Water St. New York, NY, USA</p>
+								<div class="w-2/12 bg-cg-blue h-0.1"></div>
+								<div class="w-full flex flex-row">
+									<p class=" group-hover:text-white font-normal text-sm text-outer-space">4 Bedrooms</p>
+									<p class=" group-hover:text-white font-normal text-sm text-outer-space">3 Bathrooms</p>
+									<p class=" group-hover:text-white font-normal text-sm text-outer-space">1200 Sqft</p>
+								</div>
+								<div class="w-full flex flex-row justify-between">
+									<p class=" group-hover:text-white font-bold text-xl text-outer-space">$259,900</p>
+									<div class="flex flex-row">
+										<svg class=" w-4 fill-current text-lavender-gray"viewBox="0 0 51.997 51.997">
+											<path d="M51.911 16.242c-.759-8.354-6.672-14.415-14.072-14.415-4.93 0-9.444 2.653-11.984 6.905-2.517-4.307-6.846-6.906-11.697-6.906C6.759 1.826.845 7.887.087 16.241c-.06.369-.306 2.311.442 5.478 1.078 4.568 3.568 8.723 7.199 12.013l18.115 16.439 18.426-16.438c3.631-3.291 6.121-7.445 7.199-12.014.748-3.166.502-5.108.443-5.477zm-2.39 5.019c-.984 4.172-3.265 7.973-6.59 10.985L25.855 47.481 9.072 32.25c-3.331-3.018-5.611-6.818-6.596-10.99-.708-2.997-.417-4.69-.416-4.701l.015-.101c.65-7.319 5.731-12.632 12.083-12.632 4.687 0 8.813 2.88 10.771 7.515l.921 2.183.921-2.183c1.927-4.564 6.271-7.514 11.069-7.514 6.351 0 11.433 5.313 12.096 12.727.002.016.293 1.71-.415 4.707z"/>
+										</svg>
+										<svg class="w-4 fill-current text-lavender-gray" viewBox="0 0 473.932 473.932">
+											<path d="M385.513 301.214c-27.438 0-51.64 13.072-67.452 33.09l-146.66-75.002c1.92-7.161 3.3-14.56 3.3-22.347 0-8.477-1.639-16.458-3.926-24.224l146.013-74.656c15.725 20.924 40.553 34.6 68.746 34.6 47.758 0 86.391-38.633 86.391-86.348C471.926 38.655 433.292 0 385.535 0c-47.65 0-86.326 38.655-86.326 86.326 0 7.809 1.381 15.229 3.322 22.412L155.892 183.74c-15.833-20.039-40.079-33.154-67.56-33.154-47.715 0-86.326 38.676-86.326 86.369s38.612 86.348 86.326 86.348c28.236 0 53.043-13.719 68.832-34.664l145.948 74.656c-2.287 7.744-3.947 15.79-3.947 24.289 0 47.693 38.676 86.348 86.326 86.348 47.758 0 86.391-38.655 86.391-86.348.022-47.736-38.611-86.37-86.369-86.37z"/>
+										</svg>
+									</div>
+								</div>
+								<a class="flex flex-row" href="#header">
+									<p class=" group-hover:text-white font-normal text-sm uppercase text-deep-space-sparkle">Get details</p>
+									<svg class="w-3 fill-current text-deep-space-sparkle" viewBox="0 0 20.94 12.844">
+										<path class="cls-1" d="M1047,549.5a0.726,0.726,0,0,0,.74.714h17.7l-4.64,4.5a0.707,0.707,0,0,0,0,1.006,0.753,0.753,0,0,0,1.04,0l5.89-5.719a0.731,0.731,0,0,0,0-1.01l-5.89-5.715a0.755,0.755,0,0,0-1.04,0,0.7,0.7,0,0,0,0,1.01l4.63,4.5h-17.7A0.712,0.712,0,0,0,1047,549.5Z" transform="translate(-1047 -543.094)"/>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class=" group w-1/4 hidden xl:block px-2 pb-4">
+					<div class=" w-full flex flex-col bg-white">
+						<div class="relative pb-76per poligon-bot">
+							<img class="absolute w-full h-full" src="../assets/img/card-picture-four.jpg" alt="picture by michael from unsplash">
+						</div>
+						<div class="w-full px-5 pb-5 bg-white">
+							<div class=" group-hover:bg-cg-blue w-full flex flex-col bg-gray-light -mt-28 relative pt-20 pb-13 px-10 poligon-top">
+								<p class=" group-hover:text-white font-medium text-2xl text-outer-space">Gorgeus Apartment</p>
+								<p class=" group-hover:text-white font-normal text-sm text-outer-space">Water St. New York, NY, USA</p>
+								<div class="w-2/12 bg-cg-blue h-0.1"></div>
+								<div class="w-full flex flex-row">
+									<p class=" group-hover:text-white font-normal text-sm text-outer-space">4 Bedrooms</p>
+									<p class=" group-hover:text-white font-normal text-sm text-outer-space">3 Bathrooms</p>
+									<p class=" group-hover:text-white font-normal text-sm text-outer-space">1200 Sqft</p>
+								</div>
+								<div class="w-full flex flex-row justify-between">
+									<p class=" group-hover:text-white font-bold text-xl text-outer-space">$259,900</p>
+									<div class="flex flex-row">
+										<svg class=" w-4 fill-current text-lavender-gray"viewBox="0 0 51.997 51.997">
+											<path d="M51.911 16.242c-.759-8.354-6.672-14.415-14.072-14.415-4.93 0-9.444 2.653-11.984 6.905-2.517-4.307-6.846-6.906-11.697-6.906C6.759 1.826.845 7.887.087 16.241c-.06.369-.306 2.311.442 5.478 1.078 4.568 3.568 8.723 7.199 12.013l18.115 16.439 18.426-16.438c3.631-3.291 6.121-7.445 7.199-12.014.748-3.166.502-5.108.443-5.477zm-2.39 5.019c-.984 4.172-3.265 7.973-6.59 10.985L25.855 47.481 9.072 32.25c-3.331-3.018-5.611-6.818-6.596-10.99-.708-2.997-.417-4.69-.416-4.701l.015-.101c.65-7.319 5.731-12.632 12.083-12.632 4.687 0 8.813 2.88 10.771 7.515l.921 2.183.921-2.183c1.927-4.564 6.271-7.514 11.069-7.514 6.351 0 11.433 5.313 12.096 12.727.002.016.293 1.71-.415 4.707z"/>
+										</svg>
+										<svg class="w-4 fill-current text-lavender-gray" viewBox="0 0 473.932 473.932">
+											<path d="M385.513 301.214c-27.438 0-51.64 13.072-67.452 33.09l-146.66-75.002c1.92-7.161 3.3-14.56 3.3-22.347 0-8.477-1.639-16.458-3.926-24.224l146.013-74.656c15.725 20.924 40.553 34.6 68.746 34.6 47.758 0 86.391-38.633 86.391-86.348C471.926 38.655 433.292 0 385.535 0c-47.65 0-86.326 38.655-86.326 86.326 0 7.809 1.381 15.229 3.322 22.412L155.892 183.74c-15.833-20.039-40.079-33.154-67.56-33.154-47.715 0-86.326 38.676-86.326 86.369s38.612 86.348 86.326 86.348c28.236 0 53.043-13.719 68.832-34.664l145.948 74.656c-2.287 7.744-3.947 15.79-3.947 24.289 0 47.693 38.676 86.348 86.326 86.348 47.758 0 86.391-38.655 86.391-86.348.022-47.736-38.611-86.37-86.369-86.37z"/>
+										</svg>
+									</div>
+								</div>
+								<a class="flex flex-row" href="#header">
+									<p class=" group-hover:text-white font-normal text-sm uppercase text-deep-space-sparkle">Get details</p>
+									<svg class="w-3 fill-current text-deep-space-sparkle" viewBox="0 0 20.94 12.844">
+										<path class="cls-1" d="M1047,549.5a0.726,0.726,0,0,0,.74.714h17.7l-4.64,4.5a0.707,0.707,0,0,0,0,1.006,0.753,0.753,0,0,0,1.04,0l5.89-5.719a0.731,0.731,0,0,0,0-1.01l-5.89-5.715a0.755,0.755,0,0,0-1.04,0,0.7,0.7,0,0,0,0,1.01l4.63,4.5h-17.7A0.712,0.712,0,0,0,1047,549.5Z" transform="translate(-1047 -543.094)"/>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class=" group w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 px-2 pb-4">
+					<div class=" w-full flex flex-col bg-white">
+						<div class="relative pb-76per poligon-bot">
+							<img class="absolute w-full h-full" src="../assets/img/card-picture-five.jpg" alt="picture by michael from unsplash">
+						</div>
+						<div class="w-full px-5 pb-5 bg-white">
+							<div class=" group-hover:bg-cg-blue w-full flex flex-col bg-gray-light -mt-28 relative pt-20 pb-13 px-10 poligon-top">
+								<p class=" group-hover:text-white font-medium text-2xl text-outer-space">Gorgeus Apartment</p>
+								<p class=" group-hover:text-white font-normal text-sm text-outer-space">Water St. New York, NY, USA</p>
+								<div class="w-2/12 bg-cg-blue h-0.1"></div>
+								<div class="w-full flex flex-row">
+									<p class=" group-hover:text-white font-normal text-sm text-outer-space">4 Bedrooms</p>
+									<p class=" group-hover:text-white font-normal text-sm text-outer-space">3 Bathrooms</p>
+									<p class=" group-hover:text-white font-normal text-sm text-outer-space">1200 Sqft</p>
+								</div>
+								<div class="w-full flex flex-row justify-between">
+									<p class=" group-hover:text-white font-bold text-xl text-outer-space">$259,900</p>
+									<div class="flex flex-row">
+										<svg class=" w-4 fill-current text-lavender-gray"viewBox="0 0 51.997 51.997">
+											<path d="M51.911 16.242c-.759-8.354-6.672-14.415-14.072-14.415-4.93 0-9.444 2.653-11.984 6.905-2.517-4.307-6.846-6.906-11.697-6.906C6.759 1.826.845 7.887.087 16.241c-.06.369-.306 2.311.442 5.478 1.078 4.568 3.568 8.723 7.199 12.013l18.115 16.439 18.426-16.438c3.631-3.291 6.121-7.445 7.199-12.014.748-3.166.502-5.108.443-5.477zm-2.39 5.019c-.984 4.172-3.265 7.973-6.59 10.985L25.855 47.481 9.072 32.25c-3.331-3.018-5.611-6.818-6.596-10.99-.708-2.997-.417-4.69-.416-4.701l.015-.101c.65-7.319 5.731-12.632 12.083-12.632 4.687 0 8.813 2.88 10.771 7.515l.921 2.183.921-2.183c1.927-4.564 6.271-7.514 11.069-7.514 6.351 0 11.433 5.313 12.096 12.727.002.016.293 1.71-.415 4.707z"/>
+										</svg>
+										<svg class="w-4 fill-current text-lavender-gray" viewBox="0 0 473.932 473.932">
+											<path d="M385.513 301.214c-27.438 0-51.64 13.072-67.452 33.09l-146.66-75.002c1.92-7.161 3.3-14.56 3.3-22.347 0-8.477-1.639-16.458-3.926-24.224l146.013-74.656c15.725 20.924 40.553 34.6 68.746 34.6 47.758 0 86.391-38.633 86.391-86.348C471.926 38.655 433.292 0 385.535 0c-47.65 0-86.326 38.655-86.326 86.326 0 7.809 1.381 15.229 3.322 22.412L155.892 183.74c-15.833-20.039-40.079-33.154-67.56-33.154-47.715 0-86.326 38.676-86.326 86.369s38.612 86.348 86.326 86.348c28.236 0 53.043-13.719 68.832-34.664l145.948 74.656c-2.287 7.744-3.947 15.79-3.947 24.289 0 47.693 38.676 86.348 86.326 86.348 47.758 0 86.391-38.655 86.391-86.348.022-47.736-38.611-86.37-86.369-86.37z"/>
+										</svg>
+									</div>
+								</div>
+								<a class="flex flex-row" href="#header">
+									<p class=" group-hover:text-white font-normal text-sm uppercase text-deep-space-sparkle">Get details</p>
+									<svg class="w-3 fill-current text-deep-space-sparkle" viewBox="0 0 20.94 12.844">
+										<path class="cls-1" d="M1047,549.5a0.726,0.726,0,0,0,.74.714h17.7l-4.64,4.5a0.707,0.707,0,0,0,0,1.006,0.753,0.753,0,0,0,1.04,0l5.89-5.719a0.731,0.731,0,0,0,0-1.01l-5.89-5.715a0.755,0.755,0,0,0-1.04,0,0.7,0.7,0,0,0,0,1.01l4.63,4.5h-17.7A0.712,0.712,0,0,0,1047,549.5Z" transform="translate(-1047 -543.094)"/>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class=" group w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 px-2 pb-4">
+					<div class=" w-full flex flex-col bg-white">
+						<div class="relative pb-76per poligon-bot">
+							<img class="absolute w-full h-full" src="../assets/img/card-picture-six.jpg" alt="picture by michael from unsplash">
+						</div>
+						<div class="w-full px-5 pb-5 bg-white">
+							<div class=" group-hover:bg-cg-blue w-full flex flex-col bg-gray-light -mt-28 relative pt-20 pb-13 px-10 poligon-top">
+								<p class=" group-hover:text-white font-medium text-2xl text-outer-space">Gorgeus Apartment</p>
+								<p class=" group-hover:text-white font-normal text-sm text-outer-space">Water St. New York, NY, USA</p>
+								<div class="w-2/12 bg-cg-blue h-0.1"></div>
+								<div class="w-full flex flex-row">
+									<p class=" group-hover:text-white font-normal text-sm text-outer-space">4 Bedrooms</p>
+									<p class=" group-hover:text-white font-normal text-sm text-outer-space">3 Bathrooms</p>
+									<p class=" group-hover:text-white font-normal text-sm text-outer-space">1200 Sqft</p>
+								</div>
+								<div class="w-full flex flex-row justify-between">
+									<p class=" group-hover:text-white font-bold text-xl text-outer-space">$259,900</p>
+									<div class="flex flex-row">
+										<svg class=" w-4 fill-current text-lavender-gray"viewBox="0 0 51.997 51.997">
+											<path d="M51.911 16.242c-.759-8.354-6.672-14.415-14.072-14.415-4.93 0-9.444 2.653-11.984 6.905-2.517-4.307-6.846-6.906-11.697-6.906C6.759 1.826.845 7.887.087 16.241c-.06.369-.306 2.311.442 5.478 1.078 4.568 3.568 8.723 7.199 12.013l18.115 16.439 18.426-16.438c3.631-3.291 6.121-7.445 7.199-12.014.748-3.166.502-5.108.443-5.477zm-2.39 5.019c-.984 4.172-3.265 7.973-6.59 10.985L25.855 47.481 9.072 32.25c-3.331-3.018-5.611-6.818-6.596-10.99-.708-2.997-.417-4.69-.416-4.701l.015-.101c.65-7.319 5.731-12.632 12.083-12.632 4.687 0 8.813 2.88 10.771 7.515l.921 2.183.921-2.183c1.927-4.564 6.271-7.514 11.069-7.514 6.351 0 11.433 5.313 12.096 12.727.002.016.293 1.71-.415 4.707z"/>
+										</svg>
+										<svg class="w-4 fill-current text-lavender-gray" viewBox="0 0 473.932 473.932">
+											<path d="M385.513 301.214c-27.438 0-51.64 13.072-67.452 33.09l-146.66-75.002c1.92-7.161 3.3-14.56 3.3-22.347 0-8.477-1.639-16.458-3.926-24.224l146.013-74.656c15.725 20.924 40.553 34.6 68.746 34.6 47.758 0 86.391-38.633 86.391-86.348C471.926 38.655 433.292 0 385.535 0c-47.65 0-86.326 38.655-86.326 86.326 0 7.809 1.381 15.229 3.322 22.412L155.892 183.74c-15.833-20.039-40.079-33.154-67.56-33.154-47.715 0-86.326 38.676-86.326 86.369s38.612 86.348 86.326 86.348c28.236 0 53.043-13.719 68.832-34.664l145.948 74.656c-2.287 7.744-3.947 15.79-3.947 24.289 0 47.693 38.676 86.348 86.326 86.348 47.758 0 86.391-38.655 86.391-86.348.022-47.736-38.611-86.37-86.369-86.37z"/>
+										</svg>
+									</div>
+								</div>
+								<a class="flex flex-row" href="#header">
+									<p class=" group-hover:text-white font-normal text-sm uppercase text-deep-space-sparkle">Get details</p>
+									<svg class="w-3 fill-current text-deep-space-sparkle" viewBox="0 0 20.94 12.844">
+										<path class="cls-1" d="M1047,549.5a0.726,0.726,0,0,0,.74.714h17.7l-4.64,4.5a0.707,0.707,0,0,0,0,1.006,0.753,0.753,0,0,0,1.04,0l5.89-5.719a0.731,0.731,0,0,0,0-1.01l-5.89-5.715a0.755,0.755,0,0,0-1.04,0,0.7,0.7,0,0,0,0,1.01l4.63,4.5h-17.7A0.712,0.712,0,0,0,1047,549.5Z" transform="translate(-1047 -543.094)"/>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class=" group w-1/4 hidden lg:w-1/3 xl:w-1/4 lg:block px-2  pb-4">
+					<div class=" w-full flex flex-col bg-white">
+						<div class="relative pb-76per poligon-bot">
+							<img class="absolute w-full h-full" src="../assets/img/card-picture-seven.jpg" alt="picture by michael from unsplash">
+						</div>
+						<div class="w-full px-5 pb-5 bg-white">
+							<div class=" group-hover:bg-cg-blue w-full flex flex-col bg-gray-light -mt-28 relative pt-20 pb-13 px-10 poligon-top">
+								<p class=" group-hover:text-white font-medium text-2xl text-outer-space">Gorgeus Apartment</p>
+								<p class=" group-hover:text-white font-normal text-sm text-outer-space">Water St. New York, NY, USA</p>
+								<div class="w-2/12 bg-cg-blue h-0.1"></div>
+								<div class="w-full flex flex-row">
+									<p class=" group-hover:text-white font-normal text-sm text-outer-space">4 Bedrooms</p>
+									<p class=" group-hover:text-white font-normal text-sm text-outer-space">3 Bathrooms</p>
+									<p class=" group-hover:text-white font-normal text-sm text-outer-space">1200 Sqft</p>
+								</div>
+								<div class="w-full flex flex-row justify-between">
+									<p class=" group-hover:text-white font-bold text-xl text-outer-space">$259,900</p>
+									<div class="flex flex-row">
+										<svg class=" w-4 fill-current text-lavender-gray"viewBox="0 0 51.997 51.997">
+											<path d="M51.911 16.242c-.759-8.354-6.672-14.415-14.072-14.415-4.93 0-9.444 2.653-11.984 6.905-2.517-4.307-6.846-6.906-11.697-6.906C6.759 1.826.845 7.887.087 16.241c-.06.369-.306 2.311.442 5.478 1.078 4.568 3.568 8.723 7.199 12.013l18.115 16.439 18.426-16.438c3.631-3.291 6.121-7.445 7.199-12.014.748-3.166.502-5.108.443-5.477zm-2.39 5.019c-.984 4.172-3.265 7.973-6.59 10.985L25.855 47.481 9.072 32.25c-3.331-3.018-5.611-6.818-6.596-10.99-.708-2.997-.417-4.69-.416-4.701l.015-.101c.65-7.319 5.731-12.632 12.083-12.632 4.687 0 8.813 2.88 10.771 7.515l.921 2.183.921-2.183c1.927-4.564 6.271-7.514 11.069-7.514 6.351 0 11.433 5.313 12.096 12.727.002.016.293 1.71-.415 4.707z"/>
+										</svg>
+										<svg class="w-4 fill-current text-lavender-gray" viewBox="0 0 473.932 473.932">
+											<path d="M385.513 301.214c-27.438 0-51.64 13.072-67.452 33.09l-146.66-75.002c1.92-7.161 3.3-14.56 3.3-22.347 0-8.477-1.639-16.458-3.926-24.224l146.013-74.656c15.725 20.924 40.553 34.6 68.746 34.6 47.758 0 86.391-38.633 86.391-86.348C471.926 38.655 433.292 0 385.535 0c-47.65 0-86.326 38.655-86.326 86.326 0 7.809 1.381 15.229 3.322 22.412L155.892 183.74c-15.833-20.039-40.079-33.154-67.56-33.154-47.715 0-86.326 38.676-86.326 86.369s38.612 86.348 86.326 86.348c28.236 0 53.043-13.719 68.832-34.664l145.948 74.656c-2.287 7.744-3.947 15.79-3.947 24.289 0 47.693 38.676 86.348 86.326 86.348 47.758 0 86.391-38.655 86.391-86.348.022-47.736-38.611-86.37-86.369-86.37z"/>
+										</svg>
+									</div>
+								</div>
+								<a class="flex flex-row" href="#header">
+									<p class=" group-hover:text-white font-normal text-sm uppercase text-deep-space-sparkle">Get details</p>
+									<svg class="w-3 fill-current text-deep-space-sparkle" viewBox="0 0 20.94 12.844">
+										<path class="cls-1" d="M1047,549.5a0.726,0.726,0,0,0,.74.714h17.7l-4.64,4.5a0.707,0.707,0,0,0,0,1.006,0.753,0.753,0,0,0,1.04,0l5.89-5.719a0.731,0.731,0,0,0,0-1.01l-5.89-5.715a0.755,0.755,0,0,0-1.04,0,0.7,0.7,0,0,0,0,1.01l4.63,4.5h-17.7A0.712,0.712,0,0,0,1047,549.5Z" transform="translate(-1047 -543.094)"/>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class=" group w-1/4 hidden xl:block px-2 pb-4">
+					<div class=" w-full flex flex-col bg-white">
+						<div class="relative pb-76per poligon-bot">
+							<img class="absolute w-full h-full" src="../assets/img/card-picture-height.jpg" alt="picture by michael from unsplash">
+						</div>
+						<div class="w-full px-5 pb-5 bg-white">
+							<div class=" group-hover:bg-cg-blue w-full flex flex-col bg-gray-light -mt-28 relative pt-20 pb-13 px-10 poligon-top">
+								<p class=" group-hover:text-white font-medium text-2xl text-outer-space">Gorgeus Apartment</p>
+								<p class=" group-hover:text-white font-normal text-sm text-outer-space">Water St. New York, NY, USA</p>
+								<div class="w-2/12 bg-cg-blue h-0.1"></div>
+								<div class="w-full flex flex-row">
+									<p class=" group-hover:text-white font-normal text-sm text-outer-space">4 Bedrooms</p>
+									<p class=" group-hover:text-white font-normal text-sm text-outer-space">3 Bathrooms</p>
+									<p class=" group-hover:text-white font-normal text-sm text-outer-space">1200 Sqft</p>
+								</div>
+								<div class="w-full flex flex-row justify-between">
+									<p class=" group-hover:text-white font-bold text-xl text-outer-space">$259,900</p>
+									<div class="flex flex-row">
+										<svg class=" w-4 fill-current text-lavender-gray"viewBox="0 0 51.997 51.997">
+											<path d="M51.911 16.242c-.759-8.354-6.672-14.415-14.072-14.415-4.93 0-9.444 2.653-11.984 6.905-2.517-4.307-6.846-6.906-11.697-6.906C6.759 1.826.845 7.887.087 16.241c-.06.369-.306 2.311.442 5.478 1.078 4.568 3.568 8.723 7.199 12.013l18.115 16.439 18.426-16.438c3.631-3.291 6.121-7.445 7.199-12.014.748-3.166.502-5.108.443-5.477zm-2.39 5.019c-.984 4.172-3.265 7.973-6.59 10.985L25.855 47.481 9.072 32.25c-3.331-3.018-5.611-6.818-6.596-10.99-.708-2.997-.417-4.69-.416-4.701l.015-.101c.65-7.319 5.731-12.632 12.083-12.632 4.687 0 8.813 2.88 10.771 7.515l.921 2.183.921-2.183c1.927-4.564 6.271-7.514 11.069-7.514 6.351 0 11.433 5.313 12.096 12.727.002.016.293 1.71-.415 4.707z"/>
+										</svg>
+										<svg class="w-4 fill-current text-lavender-gray" viewBox="0 0 473.932 473.932">
+											<path d="M385.513 301.214c-27.438 0-51.64 13.072-67.452 33.09l-146.66-75.002c1.92-7.161 3.3-14.56 3.3-22.347 0-8.477-1.639-16.458-3.926-24.224l146.013-74.656c15.725 20.924 40.553 34.6 68.746 34.6 47.758 0 86.391-38.633 86.391-86.348C471.926 38.655 433.292 0 385.535 0c-47.65 0-86.326 38.655-86.326 86.326 0 7.809 1.381 15.229 3.322 22.412L155.892 183.74c-15.833-20.039-40.079-33.154-67.56-33.154-47.715 0-86.326 38.676-86.326 86.369s38.612 86.348 86.326 86.348c28.236 0 53.043-13.719 68.832-34.664l145.948 74.656c-2.287 7.744-3.947 15.79-3.947 24.289 0 47.693 38.676 86.348 86.326 86.348 47.758 0 86.391-38.655 86.391-86.348.022-47.736-38.611-86.37-86.369-86.37z"/>
+										</svg>
+									</div>
+								</div>
+								<a class="flex flex-row" href="#header">
+									<p class=" group-hover:text-white font-normal text-sm uppercase text-deep-space-sparkle">Get details</p>
+									<svg class="w-3 fill-current text-deep-space-sparkle" viewBox="0 0 20.94 12.844">
+										<path class="cls-1" d="M1047,549.5a0.726,0.726,0,0,0,.74.714h17.7l-4.64,4.5a0.707,0.707,0,0,0,0,1.006,0.753,0.753,0,0,0,1.04,0l5.89-5.719a0.731,0.731,0,0,0,0-1.01l-5.89-5.715a0.755,0.755,0,0,0-1.04,0,0.7,0.7,0,0,0,0,1.01l4.63,4.5h-17.7A0.712,0.712,0,0,0,1047,549.5Z" transform="translate(-1047 -543.094)"/>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- cards -->
+		</section>
+		<!-- cards section end -->
+
+		<!-- perfect house -->
+		<section class="w-full bg-cg-blue py-12 sm:py-16">
+			<div class="container mx-auto w-full flex flex-col sm:flex-row items-center px-4 xl:px-0">
+				<!-- left side -->
+				<div class="w-full sm:w-7/12 mb-4 sm:mb-0">
+					<h3 class=" text-2xl sm:text-4xl font-medium text-white mb-4 leading-none">Select the Perfect House from Stuck</h3>
+					<div class="w-9/12">						
+						<p class=" text-sm sm:text-lg font-normal text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum omnis quasi atque quaerat totam similique molestiae consequatur illo.</p>
+					</div>
+				</div>
+				<!-- left side end -->
+
+				<!-- middle -->
+				<div class="hidden sm:block w-1/12">
+					<svg class=" w-12 fill-current text-white mx-auto" viewBox="0 0 56.75 96.25">
+						<path class="cls-1" d="M1146.63,2700.87l1.74,1-55,95.26-1.74-1,55-95.26" transform="translate(-1091.63 -2700.88)"/>
+					</svg>
+				</div>
+				<!-- middle end-->
+
+				<!-- right side -->
+				<div class="w-full sm:w-4/12 flex sm:justify-end">
+					<a class=" hover:text-cg-blue hover:border-cg-blue hover:bg-white text-lg sm:text-1xl text-white font-normal uppercase py-1 sm:py-3 px-4 sm:px-8 border-2 border-white" href="#header">Contact now</a>
+				</div>
+				<!-- right side end-->
+			</div>
+		</section>
+		<!-- perfect house end-->
+
+		<!-- services section -->
+		<section class="container mx-auto flex flex-col py-16">
+			<!-- services title -->
+			<div class="w-full flex flex-col items-center mb-10">
+				<h3 class="big-tittle">Services</h3>
+				<div class="w-10/12 sm:w-4/12 lg:w-3/12 xl:w-2/12">
+					<p class="light-subtittle mb-2">We provide good quality</p>
+
+					<div class="hidden sm:block lines-be-af relative w-full text-center text-cg-blue">
+						<svg class="mx-auto" xmlns="http://www.w3.org/2000/svg" width="14.688" height="14.68">
+							<path class="fill-current text-cg-blue" d="M13.99-.01l.708.7-14 14-.707-.7 14-14" fill="#cdcdcd" fill-rule="evenodd"/>
+						</svg>
+					</div>
+
+				</div>
+			</div>
+			<!-- services title end -->
+
+			<!-- cards of services -->
+			<div class="w-full flex flex-row">
+				<div class=" group w-full sm:w-1/2 lg:w-1/3 px-2">
+					<div class=" w-full flex flex-col bg-white">
+						<div class="relative pb-76per poligon-bot">
+							<img class="absolute w-full h-full" src="../assets/img/picture-services.jpg" alt="picture by mostafa meraji from unsplash">
+						</div>
+						<div class="w-full px-5 pb-5 bg-white">
+							<div class=" group-hover:bg-cg-blue w-full flex flex-col bg-gray-light -mt-28 relative pt-20 pb-13 px-10 poligon-top">
+								<p class=" group-hover:text-white font-medium text-2xl text-outer-space">Gorgeus Apartment</p>
+								<p class=" group-hover:text-white font-normal text-sm text-outer-space">Water St. New York, NY, USA</p>
+								<div class="w-2/12 bg-cg-blue h-0.1"></div>
+								<div class="w-full flex flex-row">
+									<p class=" group-hover:text-white font-normal text-sm text-outer-space">4 Bedrooms</p>
+									<p class=" group-hover:text-white font-normal text-sm text-outer-space">3 Bathrooms</p>
+									<p class=" group-hover:text-white font-normal text-sm text-outer-space">1200 Sqft</p>
+								</div>
+								<div class="w-full flex flex-row justify-between">
+									<p class=" group-hover:text-white font-bold text-xl text-outer-space">$259,900</p>
+									<div class="flex flex-row">
+										<svg class=" w-4 fill-current text-lavender-gray"viewBox="0 0 51.997 51.997">
+											<path d="M51.911 16.242c-.759-8.354-6.672-14.415-14.072-14.415-4.93 0-9.444 2.653-11.984 6.905-2.517-4.307-6.846-6.906-11.697-6.906C6.759 1.826.845 7.887.087 16.241c-.06.369-.306 2.311.442 5.478 1.078 4.568 3.568 8.723 7.199 12.013l18.115 16.439 18.426-16.438c3.631-3.291 6.121-7.445 7.199-12.014.748-3.166.502-5.108.443-5.477zm-2.39 5.019c-.984 4.172-3.265 7.973-6.59 10.985L25.855 47.481 9.072 32.25c-3.331-3.018-5.611-6.818-6.596-10.99-.708-2.997-.417-4.69-.416-4.701l.015-.101c.65-7.319 5.731-12.632 12.083-12.632 4.687 0 8.813 2.88 10.771 7.515l.921 2.183.921-2.183c1.927-4.564 6.271-7.514 11.069-7.514 6.351 0 11.433 5.313 12.096 12.727.002.016.293 1.71-.415 4.707z"/>
+										</svg>
+										<svg class="w-4 fill-current text-lavender-gray" viewBox="0 0 473.932 473.932">
+											<path d="M385.513 301.214c-27.438 0-51.64 13.072-67.452 33.09l-146.66-75.002c1.92-7.161 3.3-14.56 3.3-22.347 0-8.477-1.639-16.458-3.926-24.224l146.013-74.656c15.725 20.924 40.553 34.6 68.746 34.6 47.758 0 86.391-38.633 86.391-86.348C471.926 38.655 433.292 0 385.535 0c-47.65 0-86.326 38.655-86.326 86.326 0 7.809 1.381 15.229 3.322 22.412L155.892 183.74c-15.833-20.039-40.079-33.154-67.56-33.154-47.715 0-86.326 38.676-86.326 86.369s38.612 86.348 86.326 86.348c28.236 0 53.043-13.719 68.832-34.664l145.948 74.656c-2.287 7.744-3.947 15.79-3.947 24.289 0 47.693 38.676 86.348 86.326 86.348 47.758 0 86.391-38.655 86.391-86.348.022-47.736-38.611-86.37-86.369-86.37z"/>
+										</svg>
+									</div>
+								</div>
+								<a class="flex flex-row" href="#header">
+									<p class=" group-hover:text-white font-normal text-sm uppercase text-deep-space-sparkle">Get details</p>
+									<svg class="w-3 fill-current text-deep-space-sparkle" viewBox="0 0 20.94 12.844">
+										<path class="cls-1" d="M1047,549.5a0.726,0.726,0,0,0,.74.714h17.7l-4.64,4.5a0.707,0.707,0,0,0,0,1.006,0.753,0.753,0,0,0,1.04,0l5.89-5.719a0.731,0.731,0,0,0,0-1.01l-5.89-5.715a0.755,0.755,0,0,0-1.04,0,0.7,0.7,0,0,0,0,1.01l4.63,4.5h-17.7A0.712,0.712,0,0,0,1047,549.5Z" transform="translate(-1047 -543.094)"/>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class=" group w-1/2 lg:w-1/3 hidden sm:block px-2">
+					<div class=" w-full flex flex-col bg-white">
+						<div class="relative pb-76per poligon-bot">
+							<img class="absolute w-full h-full" src="../assets/img/picture-services.jpg" alt="picture by mostafa meraji from unsplash">
+						</div>
+						<div class="w-full px-5 pb-5 bg-white">
+							<div class=" group-hover:bg-cg-blue w-full flex flex-col bg-gray-light -mt-28 relative pt-20 pb-13 px-10 poligon-top">
+								<p class=" group-hover:text-white font-medium text-2xl text-outer-space">Gorgeus Apartment</p>
+								<p class=" group-hover:text-white font-normal text-sm text-outer-space">Water St. New York, NY, USA</p>
+								<div class="w-2/12 bg-cg-blue h-0.1"></div>
+								<div class="w-full flex flex-row">
+									<p class=" group-hover:text-white font-normal text-sm text-outer-space">4 Bedrooms</p>
+									<p class=" group-hover:text-white font-normal text-sm text-outer-space">3 Bathrooms</p>
+									<p class=" group-hover:text-white font-normal text-sm text-outer-space">1200 Sqft</p>
+								</div>
+								<div class="w-full flex flex-row justify-between">
+									<p class=" group-hover:text-white font-bold text-xl text-outer-space">$259,900</p>
+									<div class="flex flex-row">
+										<svg class=" w-4 fill-current text-lavender-gray"viewBox="0 0 51.997 51.997">
+											<path d="M51.911 16.242c-.759-8.354-6.672-14.415-14.072-14.415-4.93 0-9.444 2.653-11.984 6.905-2.517-4.307-6.846-6.906-11.697-6.906C6.759 1.826.845 7.887.087 16.241c-.06.369-.306 2.311.442 5.478 1.078 4.568 3.568 8.723 7.199 12.013l18.115 16.439 18.426-16.438c3.631-3.291 6.121-7.445 7.199-12.014.748-3.166.502-5.108.443-5.477zm-2.39 5.019c-.984 4.172-3.265 7.973-6.59 10.985L25.855 47.481 9.072 32.25c-3.331-3.018-5.611-6.818-6.596-10.99-.708-2.997-.417-4.69-.416-4.701l.015-.101c.65-7.319 5.731-12.632 12.083-12.632 4.687 0 8.813 2.88 10.771 7.515l.921 2.183.921-2.183c1.927-4.564 6.271-7.514 11.069-7.514 6.351 0 11.433 5.313 12.096 12.727.002.016.293 1.71-.415 4.707z"/>
+										</svg>
+										<svg class="w-4 fill-current text-lavender-gray" viewBox="0 0 473.932 473.932">
+											<path d="M385.513 301.214c-27.438 0-51.64 13.072-67.452 33.09l-146.66-75.002c1.92-7.161 3.3-14.56 3.3-22.347 0-8.477-1.639-16.458-3.926-24.224l146.013-74.656c15.725 20.924 40.553 34.6 68.746 34.6 47.758 0 86.391-38.633 86.391-86.348C471.926 38.655 433.292 0 385.535 0c-47.65 0-86.326 38.655-86.326 86.326 0 7.809 1.381 15.229 3.322 22.412L155.892 183.74c-15.833-20.039-40.079-33.154-67.56-33.154-47.715 0-86.326 38.676-86.326 86.369s38.612 86.348 86.326 86.348c28.236 0 53.043-13.719 68.832-34.664l145.948 74.656c-2.287 7.744-3.947 15.79-3.947 24.289 0 47.693 38.676 86.348 86.326 86.348 47.758 0 86.391-38.655 86.391-86.348.022-47.736-38.611-86.37-86.369-86.37z"/>
+										</svg>
+									</div>
+								</div>
+								<a class="flex flex-row" href="#header">
+									<p class=" group-hover:text-white font-normal text-sm uppercase text-deep-space-sparkle">Get details</p>
+									<svg class="w-3 fill-current text-deep-space-sparkle" viewBox="0 0 20.94 12.844">
+										<path class="cls-1" d="M1047,549.5a0.726,0.726,0,0,0,.74.714h17.7l-4.64,4.5a0.707,0.707,0,0,0,0,1.006,0.753,0.753,0,0,0,1.04,0l5.89-5.719a0.731,0.731,0,0,0,0-1.01l-5.89-5.715a0.755,0.755,0,0,0-1.04,0,0.7,0.7,0,0,0,0,1.01l4.63,4.5h-17.7A0.712,0.712,0,0,0,1047,549.5Z" transform="translate(-1047 -543.094)"/>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class=" group w-1/3 hidden lg:block px-2">
+					<div class=" w-full flex flex-col bg-white">
+						<div class="relative pb-76per poligon-bot">
+							<img class="absolute w-full h-full" src="../assets/img/picture-services.jpg" alt="picture by mostafa meraji from unsplash">
+						</div>
+						<div class="w-full px-5 pb-5 bg-white">
+							<div class=" group-hover:bg-cg-blue w-full flex flex-col bg-gray-light -mt-28 relative pt-20 pb-13 px-10 poligon-top">
+								<p class=" group-hover:text-white font-medium text-2xl text-outer-space">Gorgeus Apartment</p>
+								<p class=" group-hover:text-white font-normal text-sm text-outer-space">Water St. New York, NY, USA</p>
+								<div class="w-2/12 bg-cg-blue h-0.1"></div>
+								<div class="w-full flex flex-row">
+									<p class=" group-hover:text-white font-normal text-sm text-outer-space">4 Bedrooms</p>
+									<p class=" group-hover:text-white font-normal text-sm text-outer-space">3 Bathrooms</p>
+									<p class=" group-hover:text-white font-normal text-sm text-outer-space">1200 Sqft</p>
+								</div>
+								<div class="w-full flex flex-row justify-between">
+									<p class=" group-hover:text-white font-bold text-xl text-outer-space">$259,900</p>
+									<div class="flex flex-row">
+										<svg class=" w-4 fill-current text-lavender-gray"viewBox="0 0 51.997 51.997">
+											<path d="M51.911 16.242c-.759-8.354-6.672-14.415-14.072-14.415-4.93 0-9.444 2.653-11.984 6.905-2.517-4.307-6.846-6.906-11.697-6.906C6.759 1.826.845 7.887.087 16.241c-.06.369-.306 2.311.442 5.478 1.078 4.568 3.568 8.723 7.199 12.013l18.115 16.439 18.426-16.438c3.631-3.291 6.121-7.445 7.199-12.014.748-3.166.502-5.108.443-5.477zm-2.39 5.019c-.984 4.172-3.265 7.973-6.59 10.985L25.855 47.481 9.072 32.25c-3.331-3.018-5.611-6.818-6.596-10.99-.708-2.997-.417-4.69-.416-4.701l.015-.101c.65-7.319 5.731-12.632 12.083-12.632 4.687 0 8.813 2.88 10.771 7.515l.921 2.183.921-2.183c1.927-4.564 6.271-7.514 11.069-7.514 6.351 0 11.433 5.313 12.096 12.727.002.016.293 1.71-.415 4.707z"/>
+										</svg>
+										<svg class="w-4 fill-current text-lavender-gray" viewBox="0 0 473.932 473.932">
+											<path d="M385.513 301.214c-27.438 0-51.64 13.072-67.452 33.09l-146.66-75.002c1.92-7.161 3.3-14.56 3.3-22.347 0-8.477-1.639-16.458-3.926-24.224l146.013-74.656c15.725 20.924 40.553 34.6 68.746 34.6 47.758 0 86.391-38.633 86.391-86.348C471.926 38.655 433.292 0 385.535 0c-47.65 0-86.326 38.655-86.326 86.326 0 7.809 1.381 15.229 3.322 22.412L155.892 183.74c-15.833-20.039-40.079-33.154-67.56-33.154-47.715 0-86.326 38.676-86.326 86.369s38.612 86.348 86.326 86.348c28.236 0 53.043-13.719 68.832-34.664l145.948 74.656c-2.287 7.744-3.947 15.79-3.947 24.289 0 47.693 38.676 86.348 86.326 86.348 47.758 0 86.391-38.655 86.391-86.348.022-47.736-38.611-86.37-86.369-86.37z"/>
+										</svg>
+									</div>
+								</div>
+								<a class="flex flex-row" href="#header">
+									<p class=" group-hover:text-white font-normal text-sm uppercase text-deep-space-sparkle">Get details</p>
+									<svg class="w-3 fill-current text-deep-space-sparkle" viewBox="0 0 20.94 12.844">
+										<path class="cls-1" d="M1047,549.5a0.726,0.726,0,0,0,.74.714h17.7l-4.64,4.5a0.707,0.707,0,0,0,0,1.006,0.753,0.753,0,0,0,1.04,0l5.89-5.719a0.731,0.731,0,0,0,0-1.01l-5.89-5.715a0.755,0.755,0,0,0-1.04,0,0.7,0.7,0,0,0,0,1.01l4.63,4.5h-17.7A0.712,0.712,0,0,0,1047,549.5Z" transform="translate(-1047 -543.094)"/>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- cards of services end-->
+		</section>
+		<!-- services section end-->
+
+		<!-- amazing home -->
+		<section class=" w-full flex flex-col lg:flex-row">
+			<!-- image left side -->
+			<div class=" w-full lg:w-1/2">
+				<div class="relative lg:pb-100per xl:pb-63per">
+					<img class="absolute w-full h-full" src="../assets/img/picture-amazing-home.jpg" alt="picture by robert bye from unsplash">
+				</div>
+			</div>
+			<!-- image left side -->
+
+			<!-- text right part -->
+			<div class=" w-full lg:w-1/2 bg-cg-blue flex items-center py-8 lg:py-0 px-5per sm:pr-0 sm:pl-5per">
+				<div class="w-full sm:w-9/12 flex flex-col">
+					<div class=" flex flex-row mb-3">
+						<p class=" font-normal text-lg text-white">Property of the Month</p>
+						<span class=" font-normal text-lg text-white px-6">|</span>
+						<p class=" font-normal text-lg text-white">For sale</p>
+					</div>
+					<h3 class=" font-normal text-3xl text-white mb-2">Amazing home for family</h3>
+					<div class="w-2/12 bg-white h-0.1 mb-3"></div>
+					<p class=" text-sm font-normal text-white mb-3 leading-looser">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi modi officiis ut placeat. Eligendi beatae est voluptates corrupti earum aut quidem maxime illum voluptatibus! Accusamus laboriosam alias fugit inventore quasi.</p>
+					<div class="flex flex-row mb-6">
+						<p class=" text-sm font-normal text-white mr-3">4Bedrooms</p>
+						<span class=" text-sm font-normal text-white mr-3">|</span>
+						<p class=" text-sm font-normal text-white mr-3">2Bathrooms</p>
+						<span class=" text-sm font-normal text-white mr-3">|</span>
+						<p class=" text-sm font-normal text-white">1750 Sqft</p>						
+					</div>
+					<div class="w-full">
+						<a class=" hover:bg-white hover:text-cg-blue text-sm font-normal text-white uppercase border px-6 py-2 border-white" href="#header">View Details</a>
+					</div>
+				</div>
+			</div>
+			<!-- text right part end-->
+		</section>
+		<!-- amazing home end-->
+
+		<!-- our team -->
+		<section class=" container mx-auto flex flex-col py-16">
+			<!-- our team tittle -->
+			<div class="w-full flex flex-col items-center mb-10">
+				<h3 class="big-tittle">Meet our Team</h3>
+				<div class="w-10/12 sm:w-5/12 lg:w-4/12 xl:w-2/12">
+					<p class="light-subtittle mb-2">Meet our team to get good service</p>
+					
+					<div class="lines-be-af hidden sm:block relative w-full text-center text-cg-blue">
+						<svg class="mx-auto" xmlns="http://www.w3.org/2000/svg" width="14.688" height="14.68">
+							<path class="fill-current text-cg-blue" d="M13.99-.01l.708.7-14 14-.707-.7 14-14" fill="#cdcdcd" fill-rule="evenodd"/>
+						</svg>
+					</div>
+				
+				</div>
+			</div>
+			<!-- our team tittle -->
+
+			<!-- out team cards -->
+			<div class=" w-full flex flex-col sm:flex-row flex-no-wrap">
+				<div class="group w-full sm:w-1/3 xl:w-1/4 px-2 pb-4">
+					<div class=" w-full flex flex-col bg-white">
+						<!--card image part  -->
+						<div class="relative pb-100per poligon-bot-smooth">
+							<img class="absolute w-full h-full" src="../assets/img/picture-team.jpg" alt="picture by daria volkova from unsplash">
+						</div>
+						<!--card image part  -->
+
+						<!-- card info part -->
+						<div class="w-full bg-white">
+							<div class=" group-hover:bg-cg-blue w-full flex flex-col bg-gray-light -mt-5 relative pt-12 pb-10 px-10 poligon-top-smooth items-center">
+								<p class="group-hover:text-white font-medium text-2xl text-outer-space">David Smith</p>
+								<p class=" group-hover:text-white font-normal text-sm text-outer-space mb-4">Real Estate Agent</p>
+								
+								<ul class="w-full flex flex-row justify-center">
+									<li class=" px-3">
+										<a href="#header">
+											<svg class=" group-hover:text-white fill-current text-deep-space-sparkle w-5" viewBox="0 0 155.139 155.139">
+												<title>A facebook icon</title>												
+												<path d="M89.584 155.139V84.378h23.742l3.562-27.585H89.584V39.184c0-7.984 2.208-13.425 13.67-13.425l14.595-.006V1.08C115.325.752 106.661 0 96.577 0 75.52 0 61.104 12.853 61.104 36.452v20.341H37.29v27.585h23.814v70.761h28.48z"/>
+											</svg>
+										</a>
+									</li>									
+									<li class=" px-3">
+										<a href="#header">											
+											<svg class="w-5 group-hover:text-white fill-current text-deep-space-sparkle" viewBox="0 0 24 24">
+													<title>A twitter icon</title>
+												<path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+											</svg>
+										</a>
+									</li>
+									<li class=" px-3">
+										<a href="#header">
+											<svg class="w-5 group-hover:text-white fill-current text-deep-space-sparkle" viewBox="0 0 24 24">
+													<title>A vimeo icon</title>
+												<path d="M22.875 10.063c-2.442 5.217-8.337 12.319-12.063 12.319-3.672 0-4.203-7.831-6.208-13.043-.987-2.565-1.624-1.976-3.474-.681l-1.128-1.455c2.698-2.372 5.398-5.127 7.057-5.28 1.868-.179 3.018 1.098 3.448 3.832.568 3.593 1.362 9.17 2.748 9.17 1.08 0 3.741-4.424 3.878-6.006.243-2.316-1.703-2.386-3.392-1.663 2.673-8.754 13.793-7.142 9.134 2.807z"/>
+											</svg>
+										</a>
+									</li>
+									<li class=" px-3">
+										<a href="#header">
+											<svg class="w-5 group-hover:text-white fill-current text-deep-space-sparkle" viewBox="0 0 24 24">
+													<title>A google plus icon</title>
+												<path d="M7 11v2.4h3.97c-.16 1.029-1.2 3.02-3.97 3.02-2.39 0-4.34-1.979-4.34-4.42 0-2.44 1.95-4.42 4.34-4.42 1.36 0 2.27.58 2.79 1.08l1.9-1.83c-1.22-1.14-2.8-1.83-4.69-1.83-3.87 0-7 3.13-7 7s3.13 7 7 7c4.04 0 6.721-2.84 6.721-6.84 0-.46-.051-.81-.111-1.16h-6.61zm0 0 17 2h-3v3h-2v-3h-3v-2h3v-3h2v3h3v2z" fill-rule="evenodd" clip-rule="evenodd"/>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- card info part -->
+					</div>
+				</div>
+				<div class="group w-full sm:w-1/3 xl:w-1/4 px-2 pb-4">
+					<div class=" w-full flex flex-col bg-white">
+						<div class="relative pb-100per poligon-bot-smooth">
+							<img class="absolute w-full h-full" src="../assets/img/picture-team.jpg" alt="picture by daria volkova from unsplash">
+						</div>
+						<div class="w-full bg-white">
+							<div class=" group-hover:bg-cg-blue w-full flex flex-col bg-gray-light -mt-5 relative pt-12 pb-10 px-10 poligon-top-smooth items-center">
+								<p class="group-hover:text-white font-medium text-2xl text-outer-space">David Smith</p>
+								<p class=" group-hover:text-white font-normal text-sm text-outer-space mb-4">Real Estate Agent</p>
+								
+								<ul class="w-full flex flex-row justify-center">
+									<li class=" px-3">
+										<a href="#header">
+											<svg class=" group-hover:text-white fill-current text-deep-space-sparkle w-5" viewBox="0 0 155.139 155.139">
+												<title>A facebook icon</title>
+												<path d="M89.584 155.139V84.378h23.742l3.562-27.585H89.584V39.184c0-7.984 2.208-13.425 13.67-13.425l14.595-.006V1.08C115.325.752 106.661 0 96.577 0 75.52 0 61.104 12.853 61.104 36.452v20.341H37.29v27.585h23.814v70.761h28.48z"/>
+											</svg>
+										</a>
+									</li>									
+									<li class=" px-3">
+										<a href="#header">											
+											<svg class="w-5 group-hover:text-white fill-current text-deep-space-sparkle" viewBox="0 0 24 24">
+												<title>A twitter icon</title>
+												<path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+											</svg>
+										</a>
+									</li>
+									<li class=" px-3">
+										<a href="#header">
+											<svg class="w-5 group-hover:text-white fill-current text-deep-space-sparkle" viewBox="0 0 24 24">
+												<title>A vimeo icon</title>
+												<path d="M22.875 10.063c-2.442 5.217-8.337 12.319-12.063 12.319-3.672 0-4.203-7.831-6.208-13.043-.987-2.565-1.624-1.976-3.474-.681l-1.128-1.455c2.698-2.372 5.398-5.127 7.057-5.28 1.868-.179 3.018 1.098 3.448 3.832.568 3.593 1.362 9.17 2.748 9.17 1.08 0 3.741-4.424 3.878-6.006.243-2.316-1.703-2.386-3.392-1.663 2.673-8.754 13.793-7.142 9.134 2.807z"/>
+											</svg>
+										</a>
+									</li>
+									<li class=" px-3">
+										<a href="#header">
+											<svg class="w-5 group-hover:text-white fill-current text-deep-space-sparkle" viewBox="0 0 24 24">
+												<title>A google plus icon</title>
+												<path d="M7 11v2.4h3.97c-.16 1.029-1.2 3.02-3.97 3.02-2.39 0-4.34-1.979-4.34-4.42 0-2.44 1.95-4.42 4.34-4.42 1.36 0 2.27.58 2.79 1.08l1.9-1.83c-1.22-1.14-2.8-1.83-4.69-1.83-3.87 0-7 3.13-7 7s3.13 7 7 7c4.04 0 6.721-2.84 6.721-6.84 0-.46-.051-.81-.111-1.16h-6.61zm0 0 17 2h-3v3h-2v-3h-3v-2h3v-3h2v3h3v2z" fill-rule="evenodd" clip-rule="evenodd"/>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="group sm:w-1/3 xl:w-1/4 hidden sm:block px-2 pb-4">
+					<div class=" w-full flex flex-col bg-white">
+						<div class="relative pb-100per poligon-bot-smooth">
+							<img class="absolute w-full h-full" src="../assets/img/picture-team.jpg" alt="picture by daria volkova from unsplash">
+						</div>
+						<div class="w-full bg-white">
+							<div class=" group-hover:bg-cg-blue w-full flex flex-col bg-gray-light -mt-5 relative pt-12 pb-10 px-10 poligon-top-smooth items-center">
+								<p class="group-hover:text-white font-medium text-2xl text-outer-space">David Smith</p>
+								<p class=" group-hover:text-white font-normal text-sm text-outer-space mb-4">Real Estate Agent</p>
+								
+								<ul class="w-full flex flex-row justify-center">
+									<li class=" px-3">
+										<a href="#header">
+											<svg class=" group-hover:text-white fill-current text-deep-space-sparkle w-5" viewBox="0 0 155.139 155.139">
+												<title>A facebook icon</title>
+												<path d="M89.584 155.139V84.378h23.742l3.562-27.585H89.584V39.184c0-7.984 2.208-13.425 13.67-13.425l14.595-.006V1.08C115.325.752 106.661 0 96.577 0 75.52 0 61.104 12.853 61.104 36.452v20.341H37.29v27.585h23.814v70.761h28.48z"/>
+											</svg>
+										</a>
+									</li>									
+									<li class=" px-3">
+										<a href="#header">											
+											<svg class="w-5 group-hover:text-white fill-current text-deep-space-sparkle" viewBox="0 0 24 24">
+												<title>A twitter icon</title>
+												<path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+											</svg>
+										</a>
+									</li>
+									<li class=" px-3">
+										<a href="#header">
+											<svg class="w-5 group-hover:text-white fill-current text-deep-space-sparkle" viewBox="0 0 24 24">
+												<title>A vimeo icon</title>
+												<path d="M22.875 10.063c-2.442 5.217-8.337 12.319-12.063 12.319-3.672 0-4.203-7.831-6.208-13.043-.987-2.565-1.624-1.976-3.474-.681l-1.128-1.455c2.698-2.372 5.398-5.127 7.057-5.28 1.868-.179 3.018 1.098 3.448 3.832.568 3.593 1.362 9.17 2.748 9.17 1.08 0 3.741-4.424 3.878-6.006.243-2.316-1.703-2.386-3.392-1.663 2.673-8.754 13.793-7.142 9.134 2.807z"/>
+											</svg>
+										</a>
+									</li>
+									<li class=" px-3">
+										<a href="#header">
+											<svg class="w-5 group-hover:text-white fill-current text-deep-space-sparkle" viewBox="0 0 24 24">
+												<title>A google plus icon</title>
+												<path d="M7 11v2.4h3.97c-.16 1.029-1.2 3.02-3.97 3.02-2.39 0-4.34-1.979-4.34-4.42 0-2.44 1.95-4.42 4.34-4.42 1.36 0 2.27.58 2.79 1.08l1.9-1.83c-1.22-1.14-2.8-1.83-4.69-1.83-3.87 0-7 3.13-7 7s3.13 7 7 7c4.04 0 6.721-2.84 6.721-6.84 0-.46-.051-.81-.111-1.16h-6.61zm0 0 17 2h-3v3h-2v-3h-3v-2h3v-3h2v3h3v2z" fill-rule="evenodd" clip-rule="evenodd"/>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="group w-1/4 hidden xl:block px-2 pb-4">
+					<div class=" w-full flex flex-col bg-white">
+						<div class="relative pb-100per poligon-bot-smooth">
+							<img class="absolute w-full h-full" src="../assets/img/picture-team.jpg" alt="picture by daria volkova from unsplash">
+						</div>
+						<div class="w-full bg-white">
+							<div class=" group-hover:bg-cg-blue w-full flex flex-col bg-gray-light -mt-5 relative pt-12 pb-10 px-10 poligon-top-smooth items-center">
+								<p class="group-hover:text-white font-medium text-2xl text-outer-space">David Smith</p>
+								<p class=" group-hover:text-white font-normal text-sm text-outer-space mb-4">Real Estate Agent</p>
+								
+								<ul class="w-full flex flex-row justify-center">
+									<li class=" px-3">
+										<a href="#header">
+											<svg class=" group-hover:text-white fill-current text-deep-space-sparkle w-5" viewBox="0 0 155.139 155.139">
+												<title>A facebook icon</title>
+												<path d="M89.584 155.139V84.378h23.742l3.562-27.585H89.584V39.184c0-7.984 2.208-13.425 13.67-13.425l14.595-.006V1.08C115.325.752 106.661 0 96.577 0 75.52 0 61.104 12.853 61.104 36.452v20.341H37.29v27.585h23.814v70.761h28.48z"/>
+											</svg>
+										</a>
+									</li>									
+									<li class=" px-3">
+										<a href="#header">											
+											<svg class="w-5 group-hover:text-white fill-current text-deep-space-sparkle" viewBox="0 0 24 24">
+												<title>A twitter icon</title>
+												<path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+											</svg>
+										</a>
+									</li>
+									<li class=" px-3">
+										<a href="#header">
+											<svg class="w-5 group-hover:text-white fill-current text-deep-space-sparkle" viewBox="0 0 24 24">
+												<title>A vimeo icon</title>
+												<path d="M22.875 10.063c-2.442 5.217-8.337 12.319-12.063 12.319-3.672 0-4.203-7.831-6.208-13.043-.987-2.565-1.624-1.976-3.474-.681l-1.128-1.455c2.698-2.372 5.398-5.127 7.057-5.28 1.868-.179 3.018 1.098 3.448 3.832.568 3.593 1.362 9.17 2.748 9.17 1.08 0 3.741-4.424 3.878-6.006.243-2.316-1.703-2.386-3.392-1.663 2.673-8.754 13.793-7.142 9.134 2.807z"/>
+											</svg>
+										</a>
+									</li>
+									<li class=" px-3">
+										<a href="#header">
+											<svg class="w-5 group-hover:text-white fill-current text-deep-space-sparkle" viewBox="0 0 24 24">
+												<title>A google plus icon</title>
+												<path d="M7 11v2.4h3.97c-.16 1.029-1.2 3.02-3.97 3.02-2.39 0-4.34-1.979-4.34-4.42 0-2.44 1.95-4.42 4.34-4.42 1.36 0 2.27.58 2.79 1.08l1.9-1.83c-1.22-1.14-2.8-1.83-4.69-1.83-3.87 0-7 3.13-7 7s3.13 7 7 7c4.04 0 6.721-2.84 6.721-6.84 0-.46-.051-.81-.111-1.16h-6.61zm0 0 17 2h-3v3h-2v-3h-3v-2h3v-3h2v3h3v2z" fill-rule="evenodd" clip-rule="evenodd"/>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- out team cards -->
+		</section>
+		<!-- our team end-->
+
+		<!-- client say -->
+		<section class="w-full bg-gray-simple py-16">
+			<!-- title of client say -->
+			<div class="container mx-auto">
+				<div class="w-full flex flex-col items-center mb-4 sm:mb-10">
+					<h3 class="big-tittle">What client say</h3>
+					<div class="w-10/12 sm:w-4/12 lg:w-3/12 xl:w-2/12">
+						<p class="light-subtittle mb-2">Latest article from our client</p>
+						
+						<div class="lines-be-af hidden sm:block relative w-full text-center text-cg-blue">
+							<svg class="mx-auto" xmlns="http://www.w3.org/2000/svg" width="14.688" height="14.68">
+								<path class="fill-current text-cg-blue" d="M13.99-.01l.708.7-14 14-.707-.7 14-14" fill="#cdcdcd" fill-rule="evenodd"/>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- title of client say -->
+
+			<!-- client say info -->
+			<div class=" w-8/12 flex flex-col items-center mx-auto">
+				<div class="relative pb-42per sm:pb-24per xl:pb-8per w-42per sm:w-24per xl:w-8per rounded-full mb-3">
+					<img class="absolute w-full h-full object-cover rounded-full" src="../assets/img/picture-client-say.jpg"  alt="picture by fernando brazil from unsplash">
+				</div>
+				<div class="w-full">
+					<p class="text-center font-normal text-deep-space-sparkle uppercase">David Finch</p>
+					<p class="text-center font-normal text-xs text-deep-space-sparkle mb-5">Recepcionist</p>
+					<p class="text-center font-normal text-deep-space-sparkle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum aliquid iste culpa maiores odit voluptates ducimus alias quas autem. Explicabo autem iste minus perspiciatis quae voluptatum possimus quaerat id aliquam.</p>
+				</div>
+			</div>
+			<!-- client say info -->
+
+		</section>
+		<!-- client say end-->
+
+		<!-- from blog -->
+		<section class="container mx-auto flex flex-col py-16">
+			<!-- from blog title -->
+			<div class="w-full flex flex-col items-center mb-10">
+				<h3 class="big-tittle">From blog</h3>
+				<div class="w-10/12 sm:w-4/12 lg:w-3/12 xl:w-2/12">
+					<p class="light-subtittle mb-2">Latest news from our blog</p>
+					
+					<div class="lines-be-af hidden sm:block relative w-full text-center text-cg-blue">
+						<svg class="mx-auto" xmlns="http://www.w3.org/2000/svg" width="14.688" height="14.68">
+							<path class="fill-current text-cg-blue" d="M13.99-.01l.708.7-14 14-.707-.7 14-14" fill="#cdcdcd" fill-rule="evenodd"/>
+						</svg>
+					</div>
+				
+				</div>
+			</div>
+			<!-- from blog title end-->
+
+			<!-- from blog cards -->
+			<div class=" w-full flex flex-row">
+				<div class="w-full sm:w-1/2 lg:w-1/3 px-2">
+					<div class="w-full bg-lavender-gray flex flex-col items-center py-10 px-5">
+						<p class=" font-normal text-xl text-outer-space mb-4">Top 10 tips to improve your sales</p>
+						<p class=" font-normal text-sm text-outer-space text-center leading-loose mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus eius unde iusto numquam? Quidem provident corporis repudiandae possimus at aperiam animi quia ut molestiae, facere, dicta doloremque suscipit sed maiores?</p>
+						<a class=" font-normal text-sm text-outer-space uppercase underline" href="#header">Read more</a>
+					</div>
+				</div>
+				<div class="sm:w-1/2 lg:w-1/3 hidden sm:block px-2">
+					<div class="w-full bg-lavender-gray flex flex-col items-center py-10 px-5">
+						<p class=" font-normal text-xl text-outer-space mb-4">Top 10 tips to improve your sales</p>
+						<p class=" font-normal text-sm text-outer-space text-center leading-loose mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus eius unde iusto numquam? Quidem provident corporis repudiandae possimus at aperiam animi quia ut molestiae, facere, dicta doloremque suscipit sed maiores?</p>
+						<a class=" font-normal text-sm text-outer-space uppercase underline" href="#header">Read more</a>
+					</div>
+				</div>
+				<div class="w-1/3 hidden lg:block px-2">
+					<div class="w-full bg-lavender-gray flex flex-col items-center py-10 px-5">
+						<p class=" font-normal text-xl text-outer-space mb-4">Top 10 tips to improve your sales</p>
+						<p class=" font-normal text-sm text-outer-space text-center leading-loose mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus eius unde iusto numquam? Quidem provident corporis repudiandae possimus at aperiam animi quia ut molestiae, facere, dicta doloremque suscipit sed maiores?</p>
+						<a class=" font-normal text-sm text-outer-space uppercase underline" href="#header">Read more</a>
+					</div>
+				</div>
+			</div>
+			<!-- from blog cards -->
+		</section>
+		<!-- from blog end-->
+
+		<!-- our client  -->
+		<section class="container mx-auto pb-16">
+			<!-- our client title -->
+			<div class="w-full flex flex-col items-center mb-10">
+				<h3 class="big-tittle">Our Client</h3>
+				<div class="w-10/12 sm:w-4/12 lg:w-3/12 xl:w-2/12">
+					<p class="light-subtittle mb-2">Our trusted business partner</p>
+					
+					<div class="lines-be-af hidden sm:block relative w-full text-center text-cg-blue">
+						<svg class="mx-auto" xmlns="http://www.w3.org/2000/svg" width="14.688" height="14.68">
+							<path class="fill-current text-cg-blue" d="M13.99-.01l.708.7-14 14-.707-.7 14-14" fill="#cdcdcd" fill-rule="evenodd"/>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<!-- our client title end-->
+
+			<!-- our client brand -->
+			<div class=" w-full flex flex-row flex-wrap sm:flex-no-wrap">
+				<div class=" w-1/2 sm:w-1/4 mb-3 sm:mb-0 lg:w-1/5 xl:w-1/6 px-2">
+					<div class="relative pb-65per">
+						<img class="absolute w-full h-full" src="../assets/img/picture-our-client.jpg" alt="picture by joao tzanno from unsplash">
+					</div>
+				</div>
+				<div class="w-1/2 sm:w-1/4 mb-3 sm:mb-0 lg:w-1/5 xl:w-1/6 px-2">
+					<div class="relative pb-65per">
+						<img class="absolute w-full h-full" src="../assets/img/picture-our-client.jpg" alt="picture by joao tzanno from unsplash">
+					</div>
+				</div>
+				<div class="w-1/2 sm:w-1/4 mb-3 sm:mb-0 lg:w-1/5 xl:w-1/6 px-2">
+					<div class="relative pb-65per">
+						<img class="absolute w-full h-full" src="../assets/img/picture-our-client.jpg" alt="picture by joao tzanno from unsplash">
+					</div>
+				</div>
+				<div class="w-1/2 sm:w-1/4 mb-3 sm:mb-0 lg:w-1/5 xl:w-1/6 px-2">
+					<div class="relative pb-65per">
+						<img class="absolute w-full h-full" src="../assets/img/picture-our-client.jpg" alt="picture by joao tzanno from unsplash">
+					</div>
+				</div>
+				<div class=" hidden lg:block lg:w-1/5 xl:w-1/6 px-2">
+					<div class="relative pb-65per">
+						<img class="absolute w-full h-full" src="../assets/img/picture-our-client.jpg" alt="picture by joao tzanno from unsplash">
+					</div>
+				</div>
+				<div class=" hidden xl:block w-1/6 px-2">
+					<div class="relative pb-65per">
+						<img class="absolute w-full h-full" src="../assets/img/picture-our-client.jpg" alt="picture by joao tzanno from unsplash">
+					</div>
+				</div>
+			</div>
+			<!-- our client brand end-->
+		</section>
+		<!-- our client  end-->
+	</main>
+	<footer class=" w-full flex flex-col">
+		<!-- info footer part -->
+		<div class="w-full hidden lg:flex flex-col sm:flex-row bg-gray-superlight py-16 px-4 lg:px-10 xl:px-20">
+			<div class="w-full sm:w-4/12 mb-4 sm:mb-0">
+				<div class="w-full flex flex-col">
+					<div class="w-10/12 sm:w-7/12 pb-15per sm:pb-10per relative mb-4">
+						<img class="w-full h-full absolute" src="../assets/img/black-logo.png" alt="Logo">
+					</div>
+					<div class="w-full sm:w-10/12">
+						<p class=" text-sm mb-4 sm:mb-8 font-normal text-outer-space leading-loose">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto suscipit modi reiciendis iusto enim velit commodi officiis, maiores.</p>
+						
+						<ul class="w-full flex flex-row">
+							<li class=" pr-3">
+								<a href="#header">
+									<svg class="w-5" viewBox="0 0 155.139 155.139">
+										<title>A facebook icon</title>
+										<path d="M89.584 155.139V84.378h23.742l3.562-27.585H89.584V39.184c0-7.984 2.208-13.425 13.67-13.425l14.595-.006V1.08C115.325.752 106.661 0 96.577 0 75.52 0 61.104 12.853 61.104 36.452v20.341H37.29v27.585h23.814v70.761h28.48z"/>
+									</svg>
+								</a>
+							</li>									
+							<li class=" px-3">
+								<a href="#header">											
+									<svg class="w-5" viewBox="0 0 24 24">
+										<title>A twitter icon</title>
+										<path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+									</svg>
+								</a>
+							</li>
+							<li class=" px-3">
+								<a href="#header">
+									<svg class="w-5" viewBox="0 0 24 24">
+										<title>A vimeo icon</title>
+										<path d="M22.875 10.063c-2.442 5.217-8.337 12.319-12.063 12.319-3.672 0-4.203-7.831-6.208-13.043-.987-2.565-1.624-1.976-3.474-.681l-1.128-1.455c2.698-2.372 5.398-5.127 7.057-5.28 1.868-.179 3.018 1.098 3.448 3.832.568 3.593 1.362 9.17 2.748 9.17 1.08 0 3.741-4.424 3.878-6.006.243-2.316-1.703-2.386-3.392-1.663 2.673-8.754 13.793-7.142 9.134 2.807z"/>
+									</svg>
+								</a>
+							</li>
+							<li class=" px-3">
+								<a href="#header">
+									<svg class="w-5" viewBox="0 0 24 24">
+										<title>A google plus icon</title>
+										<path d="M7 11v2.4h3.97c-.16 1.029-1.2 3.02-3.97 3.02-2.39 0-4.34-1.979-4.34-4.42 0-2.44 1.95-4.42 4.34-4.42 1.36 0 2.27.58 2.79 1.08l1.9-1.83c-1.22-1.14-2.8-1.83-4.69-1.83-3.87 0-7 3.13-7 7s3.13 7 7 7c4.04 0 6.721-2.84 6.721-6.84 0-.46-.051-.81-.111-1.16h-6.61zm0 0 17 2h-3v3h-2v-3h-3v-2h3v-3h2v3h3v2z" fill-rule="evenodd" clip-rule="evenodd"/>
+									</svg>
+								</a>
+							</li>
+							<li class=" px-3">
+								<a href="#header">
+									<svg class="w-5" viewBox="0 0 24 24">
+										<title>A pinterest icon</title>
+										<path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 19c-.721 0-1.418-.109-2.073-.312.286-.465.713-1.227.87-1.835l.437-1.664c.229.436.895.804 1.604.804 2.111 0 3.633-1.941 3.633-4.354 0-2.312-1.888-4.042-4.316-4.042-3.021 0-4.625 2.027-4.625 4.235 0 1.027.547 2.305 1.422 2.712.132.062.203.034.234-.094l.193-.793c.017-.071.009-.132-.049-.202-.288-.35-.521-.995-.521-1.597 0-1.544 1.169-3.038 3.161-3.038 1.72 0 2.924 1.172 2.924 2.848 0 1.894-.957 3.205-2.201 3.205-.687 0-1.201-.568-1.036-1.265.197-.833.58-1.73.58-2.331 0-.537-.288-.986-.886-.986-.702 0-1.268.727-1.268 1.7 0 .621.211 1.04.211 1.04s-.694 2.934-.821 3.479c-.142.605-.086 1.454-.025 2.008-2.603-1.02-4.448-3.553-4.448-6.518 0-3.866 3.135-7 7-7s7 3.134 7 7-3.135 7-7 7z"/>
+									</svg>
+								</a>
+							</li>						
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="lg:w-3/12 xl:w-4/12">
+				<p class=" text-xl font-medium text-outer-space uppercase mb-6">Quick Link</p>
+				<ul>
+					<li><a class=" text-sm font-normal text-outer-space" href="#header">About Us</a></li>
+					<li><a class=" text-sm font-normal text-outer-space" href="#header">Return Policy</a></li>
+					<li><a class=" text-sm font-normal text-outer-space" href="#header">Privacy Policy</a></li>
+					<li><a class=" text-sm font-normal text-outer-space" href="#header">Our Blog</a></li>
+					<li><a class=" text-sm font-normal text-outer-space" href="#header">Contact Us</a></li>
+					<li><a class=" text-sm font-normal text-outer-space" href="#header">Terms & Condition</a></li>
+					<li><a class=" text-sm font-normal text-outer-space" href="#header">Faq</a></li>
+				</ul>
+			</div>
+			<div class="lg:w-5/12 xl:w-4/12">
+				<p class=" text-xl font-medium text-outer-space uppercase mb-6">Recent Post</p>
+				<div class=" lg:w-11/12 xl:w-10/12 border-b border-lavender-gray">
+					<div class="lg:w-full xl:w-9/12 flex flex-col py-2">
+						<div class="w-full flex flex-row">
+							<div class="w-3/12">
+								<div class="w-95per pb-95per relative">
+									<img class="w-full h-full absolute" src="../assets/img/picture-client-say.jpg"  alt="picture by fernando brazil from unsplash">
+								</div>	
+							</div>					
+							<div class="w-9/12 flex flex-col lg:px-1 xl:px-4">
+								<p class=" text-sm font-normal text-outer-space">Aenenas facilisis id neque malesuadais suscipit</p>
+								<div class="flex flex-row justify-between">
+									<p class=" text-xs font-normal text-outer-space italic">17 June 2019</p>
+									<div class="flex flex-row pr-3">
+										<p class="text-xs font-normal text-outer-space ">15</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class=" lg:w-11/12 xl:w-10/12 border-b border-lavender-gray">
+					<div class="lg:w-full xl:w-9/12 flex flex-col py-2">
+						<div class="w-full flex flex-row">
+							<div class="w-3/12">
+								<div class="w-95per pb-95per relative">
+									<img class="w-full h-full absolute" src="../assets/img/picture-client-say.jpg"  alt="picture by fernando brazil from unsplash">
+								</div>	
+							</div>					
+							<div class="w-9/12 flex flex-col lg:px-1 xl:px-4">
+								<p class=" text-sm font-normal text-outer-space">Aenenas facilisis id neque malesuadais suscipit</p>
+								<div class="flex flex-row justify-between">
+									<p class=" text-xs font-normal text-outer-space italic">17 June 2019</p>
+									<div class="flex flex-row pr-3">
+										<p class="text-xs font-normal text-outer-space ">15</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="w-4/12">
+				<p class=" text-xl font-medium text-outer-space uppercase mb-6">Contact info</p>
+				<ul class="w-10/12">
+					<li class="mb-4 text-sm font-normal text-outer-space">ADDRESS: 28 Green Tower,Street<br/> Name New York City, USA</li>
+					<li class="mb-4 text-sm font-normal text-outer-space">PHONE: +84 846 250 592</li>
+					<li class="mb-4 text-sm font-normal text-outer-space">EMAIL: contact@stuck.com</li>
+					<li class="mb-4 text-sm font-normal text-outer-space">WEBSITE: demostuck.com</li>
+				</ul>
+			</div>
+		</div>
+		<!-- info footer part end-->
+
+		<!-- copyright  -->
+		<div class="w-full bg-lavender-gray py-6">
+			<div class="flex flex-row justify-center">
+				<p class=" text-sm font-normal text-outer-space mr-2">Copyright 2018 Staker. Designed by</p>
+				<p class=" text-sm font-bold text-outer-space">Theme_Ui</p>
+			</div>
+		</div>
+		<!-- copyright  -->
+	</footer>
+</body>
+</html>
